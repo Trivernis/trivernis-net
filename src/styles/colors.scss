@@ -1,0 +1,15 @@
+@use "sass:color" as color;
+
+$primary: #b000bd;
+$primary-lighter-10: color.scale($primary, $lightness: 10%);
+$primary-lighter-20: color.scale($primary, $lightness: 20%);
+
+$background: #120219;
+$background-lighter-10: color.scale($background, $lightness: 10%);
+$background-lighter-20: color.scale($background, $lightness: 20%);
+$background-lighter-30: color.scale($background, $lightness: 30%);
+
+$text: #FFF;
+$text-darker: #CCF;
+$text-highlight: #a49eff;
+$text-visited: #b396ff;

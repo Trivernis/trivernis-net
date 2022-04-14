@@ -1,0 +1,33 @@
+@use "sass:color";
+
+@import "colors";
+@import "pages/home";
+
+$background-nonsolid: color.adjust($background, $alpha: -0.1);
+
+html {
+    background-image: linear-gradient(0deg, $background-nonsolid, $background-nonsolid), url("/assets/background-stars.png");
+    background-size: cover;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans", Arial, sans-serif;
+    color: $text;
+    animation: 1s ease-out 0s 1 appear;
+}
+
+
+.content {
+    margin: 15% 20%;
+}

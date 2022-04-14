@@ -1,0 +1,36 @@
+@import "colors";
+
+.navbar, .navbar-mobile {
+  color: $text;
+  &.outline {
+    border-color: $primary;
+    &.info {
+      border-color: $primary;
+    }
+  }
+
+  .navbar-container {
+    background: $background-lighter-10;
+
+    &.mobile {
+      background: $background-lighter-10;
+    }
+
+    .navbar-item {
+      &.active, &.interaction.active, &.mobile {
+        background-color: $background-lighter-30 !important;
+      }
+      &:hover, &.mobile:hover {
+        background-color: $background-lighter-20 !important;
+      }
+    }
+  }
+}
+
+a {
+  color: $text-highlight;
+}
+
+a:visited {
+  color: $text-visited;
+}
