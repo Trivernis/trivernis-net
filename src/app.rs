@@ -75,11 +75,19 @@ impl Component for App {
                             >
                             <RouterAnchor<AppRouter>route=AppRouter::RootPath>{"Home"}</RouterAnchor<AppRouter>></NavbarItem>
                         <NavbarItem
+                            class_name="navbar-route">
+                            <a href="https://github.com/trivernis" target="_blank">{"GitHub"}</a>
+                        </NavbarItem>
+                        <NavbarItem
+                            class_name="navbar-route">
+                            <a href="https://discord.gg/ZxzM2bTeXU" target="_blank">{"Discord"}</a>
+                        </NavbarItem>
+                        <NavbarItem
                             class_name="navbar-route"
                             active = self.navbar_items[1]
                             onclick_signal = self.link.callback(|_| Msg::ChangeNavbarItem(1))
                             >
-                            <RouterAnchor<AppRouter>route=AppRouter::AboutPath>{"About"}</RouterAnchor<AppRouter>></NavbarItem>
+                            <RouterAnchor<AppRouter>route=AppRouter::AboutPath>{"About this Website"}</RouterAnchor<AppRouter>></NavbarItem>
                     </NavbarContainer>
                 </Navbar>
                 <Router<AppRouter, ()>

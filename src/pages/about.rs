@@ -26,7 +26,7 @@ impl Component for About {
         html! {
             <Container direction=Direction::Row wrap=Wrap::Wrap class_name="content">
                 <Item layouts=vec!(ItemLayout::ItXs(12))>
-                    <h3>{"Libraries used for building this website"}</h3>
+                    <h3>{"Stuff used for building this website"}</h3>
                 </Item>
                 <Item layouts=vec!(ItemLayout::ItXs(12))>
                     <ul>
@@ -37,6 +37,8 @@ impl Component for About {
                             {"parceljs"}</a>{" : builder js library"}</li>
                         <li><a href="https://github.com/paulmillr/chokidar" target="_blank">
                         {"chokidar"}</a>{" : watcher js library"}</li>
+                        <li><a href="https://github.com/anuraghazra/github-readme-stats" target="_blank">
+                        {"GitHub Readme Stats"}</a>{": showing statistics about my github"}</li>
                     </ul>
                 </Item>
             </Container>
