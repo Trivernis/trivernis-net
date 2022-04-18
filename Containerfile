@@ -25,4 +25,5 @@ RUN trunk build --release
 
 FROM docker.io/nginx:alpine
 COPY --from=builder /usr/src/dist/ /usr/share/nginx/html
+COPY --from=builder /usr/src/nginx.conf /etc/nginx/nginx.conf
 CMD ["nginx", "-g", "daemon off;"]
