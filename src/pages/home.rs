@@ -39,7 +39,7 @@ impl Component for Home {
                 <Item layouts=vec!(ItemLayout::ItXs(12), ItemLayout::ItM(8)) class_name="home-description">
                     <p>{r#"
                     I'm a german software developer working on way too many projects at once.
-                    I primarily use rust because it's just the best programming language.
+                    I primarily use Rust because it's just the best programming language.
                     "#}</p>
                 </Item>
                 <Item layouts=vec!(ItemLayout::ItXs(12), ItemLayout::ItM(8)) class_name="github-stats">
