@@ -25,6 +25,14 @@ impl Component for Home {
     fn view(&self) -> Html {
         html! {
             <Container direction=Direction::Row wrap=Wrap::Wrap class_name="content">
+                <Item layouts=vec!(ItemLayout::ItXs(12), ItemLayout::ItM(12)) class_name="home-icons">
+                    <a class="icon" href="https://github.com/trivernis" target="_blank">
+                        <img src="assets/github-logo.png"/>
+                    </a>
+                    <a class="icon" href="https://discord.gg/ZxzM2bTeXU" target="_blank">
+                        <img src="assets/discord-logo.png"/>
+                    </a>
+                </Item>
                 <Item layouts=vec!(ItemLayout::ItXs(12), ItemLayout::ItM(8)) class_name="home-greeting">
                     <h1>{"Welcome to my website"}</h1>
                 </Item>

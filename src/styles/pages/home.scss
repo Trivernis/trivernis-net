@@ -28,3 +28,18 @@
     display: flex;
   }
 }
+
+.home-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .icon {
+    padding: 15px;
+    img {
+      height: 50px;
+      width: auto;
+    }
+  }
+}
