@@ -32,6 +32,9 @@ impl Component for Home {
                     <a class="icon" href="https://discord.gg/ZxzM2bTeXU" target="_blank">
                         <img src="assets/discord-logo.png"/>
                     </a>
+                    <a class="icon" rel="me" href="https://fosstodon.org/@trivernis">
+                        <img src="assets/mastodon-logo.png"/>
+                    </a>
                 </Item>
                 <Item layouts=vec!(ItemLayout::ItXs(12), ItemLayout::ItM(8)) class_name="home-greeting">
                     <h1>{"Welcome to my website"}</h1>
