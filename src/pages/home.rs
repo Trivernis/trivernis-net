@@ -32,7 +32,7 @@ impl Component for Home {
                     <a class="icon" href="https://discord.gg/ZxzM2bTeXU" target="_blank">
                         <img src="assets/discord-logo.png"/>
                     </a>
-                    <a class="icon" rel="me" href="https://fosstodon.org/@trivernis">
+                    <a class="icon" rel="me" href="https://social.funkyfish.cool/@trivernis">
                         <img src="assets/mastodon-logo.png"/>
                     </a>
                 </Item>
